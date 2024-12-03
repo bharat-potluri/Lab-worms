@@ -1,0 +1,9 @@
+firebase-admin
+Flask
+Flask-Cors
+python-dotenv
+pyrebase4
+Werkzeug
+gunicorn
+stripe
+requests-toolbelt==0.10.1

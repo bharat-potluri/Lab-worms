@@ -1,0 +1,146 @@
+/* SubscriptionStatus.css */
+.subscription-status-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+    padding: 2rem 0;
+  }
+  
+  .status-card {
+    max-width: 600px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .status-content {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .status-content h2 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .status-content p {
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Active Status */
+  .status-content.active .fa-check-circle {
+    color: #28a745;
+  }
+  
+  .features-list {
+    text-align: left;
+    max-width: 300px;
+    margin: 2rem auto;
+  }
+  
+  .feature-item {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #495057;
+  }
+  
+  .feature-item .fa-check {
+    color: #28a745;
+  }
+  
+  /* Cancelled Status */
+  .status-content.cancelled .fa-times-circle {
+    color: #dc3545;
+  }
+  
+  .message-box {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  
+  .message-box p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .message-box p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Expired Status */
+  .status-content.expired .fa-exclamation-circle {
+    color: #ffc107;
+  }
+  
+  .features-lost {
+    background: #fff5f5;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    text-align: left;
+  }
+  
+  .features-lost h5 {
+    color: #dc3545;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .features-lost .feature-item {
+    color: #dc3545;
+  }
+  
+  .features-lost .fa-lock {
+    color: #dc3545;
+  }
+  
+  /* Button Styling */
+  .btn {
+    padding: 0.8rem 2rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Icons */
+  .status-content i {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .status-card {
+      margin: 0 1rem;
+    }
+  
+    .status-content {
+      padding: 1.5rem;
+    }
+  }
+  
+  /* Animation */
+  .status-card {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

@@ -1,0 +1,12 @@
+runtime: nodejs18  # Adjust according to your node version
+
+handlers:
+- url: /(.*\.(json|ico|js|css|png|jpg|svg|woff|woff2|ttf|html))$
+  static_files: build/\1
+  upload: build/.*\.(json|ico|js|css|png|jpg|svg|woff|woff2|ttf|html)$
+
+- url: /.*
+  static_files: build/index.html
+  upload: build/index.html
+  secure: always
+  redirect_http_response_code: 301
